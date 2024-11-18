@@ -3,117 +3,233 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stephen Walker - Interactive CV</title>
+  <title>Stephen Walker</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    /* Add your custom CSS styles here */
     .section {
       scroll-margin-top: 4rem;
+      padding: 2rem 1.5rem; /* Adds padding inside each section */
+    }
+    .subsection-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .content {
+      line-height: 1.8; /* Increases readability on smaller screens */
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
     }
   </style>
 </head>
-<body>
-  <header class="bg-gray-800 text-white py-4 fixed w-full z-10 shadow-md">
-    <nav class="container mx-auto flex justify-between items-center">
-      <div class="text-xl font-bold">Stephen Walker's CV</div>
-      <ul class="flex space-x-4">
-        <li><a href="#about" class="hover:text-gray-400">About</a></li>
-        <li><a href="#work" class="hover:text-gray-400">Work</a></li>
-        <li><a href="#education" class="hover:text-gray-400">Education</a></li>
-        <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
-        <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="bg-gray-800 text-white py-4 fixed w-full z-10 shadow-md">
+  <nav class="container mx-auto px-4 flex justify-between items-center">
+    <!-- Name -->
+    <div class="text-xl font-bold">Stephen Walker</div>
+    <!-- Links -->
+    <div class="flex space-x-6">
+      <!-- Portfolio Link -->
+      <a href="portfolio.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        Portfolio
+      </a>
+      <!-- LinkedIn Link -->
+      <a href="https://www.linkedin.com/in/stephenwalkereng/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        LinkedIn
+      </a>
+    </div>
+  </nav>
+</header>
 
-  <main class="container mx-auto py-16">
-    <section id="about" class="section">
-      <h2 class="text-3xl font-bold mb-4">About Me</h2>
-      <p>Hi, I'm Stephen Walker, a final-year Mechatronics Engineering student with a passion for image processing and space sciences. I'm dedicated to advancing my knowledge in meteor ablation and fragmentation through light curve analysis and image processing, with experience in programming and data analysis.</p>
-    </section>
 
-    <section id="work" class="section">
-      <h2 class="text-3xl font-bold mb-4">Work Experience</h2>
-      <div class="space-y-8">
+
+  <main class="container mx-auto pt-24 px-4 lg:px-8">
+<!-- About Section -->
+<section id="about" class="section mb-12 bg-white rounded-lg shadow-md">
+  <h2 class="text-3xl font-bold mb-4">About Me</h2>
+  <p class="content">
+    Hi there! I'm Stephen Walker, a final-year Mechatronics Engineering student at Stellenbosch University, driven by a passion for seamlessly integrating mechanical engineering, electronics, and computer science to create cutting-edge automation and robotics systems that embody innovation and precision.
+  </p>
+  <p class="content mt-4">
+    <strong>Email:</strong> 
+    <a href="mailto:sw.walker111@gmail.com" class="text-blue-600 hover:underline">sw.walker111@gmail.com</a>
+  </p>
+  <p class="content">
+    <strong>Phone:</strong> 
+    <a href="tel:+27818926890" class="text-blue-600 hover:underline">+27 81 892 6890</a>
+  </p>
+  <p class="content">
+    <strong>Location:</strong> Stellenbosch, Western Cape
+  </p>
+</section>
+
+
+
+    <!-- Education Section -->
+    <section id="experience" class="section mb-12 bg-white rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold mb-4">Experience</h2>
+      <h3 class="subsection-title">Professional Experience</h3>
+      <div class="space-y-6">
         <div>
-          <h3 class="text-xl font-bold">Part-Time BMS Data Analyst at Energy Partners</h3>
-          <p class="text-gray-600">September 2024 - Present</p>
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Standardizing BMS systems by creating black box models for BMS asset classes.</li>
-            <li>Using BigQuery and Cloud Functions to analyze and visualize KPIs and critical data for companies.</li>
-            <li>Working on a migration feasibility study for moving Asset Management to Google Cloud Platform.</li>
+          <h4 class="font-bold">Engineering Intern</h4>
+          <p class="text-gray-600">Walker Engineering Consultants Ltd., Auckland, NZ | Dec 2022 – Feb 2023</p>
+          <ul class="list-disc pl-6 mt-2">
+            <li>Provided business support using advanced Excel features for company evaluations.</li>
+            <li>Assisted in reporting, scheduling, and project management using Microsoft Teams.</li>
+            <li>Contributed to feasibility studies exploring drone applications.</li>
           </ul>
         </div>
-        <!-- Add more work experience sections as needed -->
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <h2 class="text-3xl font-bold mb-4">Education</h2>
-      <div class="space-y-8">
         <div>
-          <h3 class="text-xl font-bold">BEng in Mechatronics Engineering</h3>
-          <p class="text-gray-600">[Your University], [Expected Graduation Year]</p>
-          <p>Focused on engineering applications in prosthetics and meteor detection through image processing and light curve analysis. Dissertation: 'Characterizing Meteor Fragmentation and Ablation Behavior Through Image Processing and Light Curve Analysis.'</p>
+          <h4 class="font-bold">Bosun</h4>
+          <p class="text-gray-600">Motor Yacht Rahil | Jun 2018 – Oct 2018</p>
+          <ul class="list-disc pl-6 mt-2">
+            <li>Managed deck crew and skippered the 9m tender.</li>
+            <li>Served as temporary chef for a crew of five during crossings.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold">Deckhand/Water Sports Instructor</h4>
+          <p class="text-gray-600">Motor Yacht Apostrophe | Jan 2018 – Jun 2018</p>
+          <ul class="list-disc pl-6 mt-2">
+            <li>Assisted the chief engineer with servicing and maintenance tasks.</li>
+            <li>Provided water sports instruction, including waterskiing and kiteboarding.</li>
+          </ul>
         </div>
       </div>
+
+      <!-- Collapsible Section -->
+      <div id="extra-work" class="hidden mt-6 space-y-6">
+        <div>
+          <h4 class="font-bold">Server/Bartender</h4>
+          <p class="text-gray-600">Hickory House Ribs, Aspen, CO | Dec 2023 – Mar 2024</p>
+          <ul class="list-disc pl-6 mt-2">
+            <li>Developed strong customer service and time management skills while working with international employees.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold">Waiter</h4>
+          <p class="text-gray-600">The Fat Butcher, Stellenbosch | Aug 2023 – Dec 2023</p>
+          <ul class="list-disc pl-6 mt-2">
+            <li>Developed extensive knowledge of steak varieties, menu ingredients, chef techniques, and beverage pairings.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Show More Button -->
+      <button id="show-more" class="bg-gray-800 text-white px-4 py-2 rounded-md mt-4 hover:bg-gray-700">
+        Show More
+      </button>
     </section>
 
-    <section id="skills" class="section">
+    <script>
+      // JavaScript for toggling the extra work experience section
+      const showMoreButton = document.getElementById("show-more");
+      const extraWorkSection = document.getElementById("extra-work");
+
+      showMoreButton.addEventListener("click", () => {
+        if (extraWorkSection.classList.contains("hidden")) {
+          extraWorkSection.classList.remove("hidden");
+          showMoreButton.textContent = "Show Less";
+        } else {
+          extraWorkSection.classList.add("hidden");
+          showMoreButton.textContent = "Show More";
+        }
+      });
+    </script>
+
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section mb-12 bg-white rounded-lg shadow-md">
       <h2 class="text-3xl font-bold mb-4">Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="bg-gray-100 p-4 rounded-md shadow-md hover:bg-gray-200 transition-colors duration-300">
-          <h3 class="text-lg font-bold">Python</h3>
-          <p>Proficient in data analysis, machine learning, and image processing.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+          <h4 class="font-bold text-lg mb-2">Programming</h4>
+          <p>C, Python, MATLAB, RStudio</p>
         </div>
-        <div class="bg-gray-100 p-4 rounded-md shadow-md hover:bg-gray-200 transition-colors duration-300">
-          <h3 class="text-lg font-bold">Google Cloud Platform</h3>
-          <p>Experience with BigQuery, Cloud Functions, and cloud-based data management.</p>
+        <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+          <h4 class="font-bold text-lg mb-2">Engineering Tools</h4>
+          <p>Autodesk Inventor, Simulink, LTspice</p>
         </div>
-        <div class="bg-gray-100 p-4 rounded-md shadow-md hover:bg-gray-200 transition-colors duration-300">
-          <h3 class="text-lg font-bold">CAD Design</h3>
-          <p>Skilled in designing mounting structures and hardware models in CAD.</p>
+        <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+          <h4 class="font-bold text-lg mb-2">Data and Systems</h4>
+          <p>MySQL, Power BI, BigQuery, STM32</p>
         </div>
-        <!-- Add more skill sections as needed -->
+        <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+          <h4 class="font-bold text-lg mb-2">Maritime</h4>
+          <p>STCW 2010, RYA Powerboat Level 2, VHF Radio</p>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+
+<!-- References Section -->
+<section id="references" class="section mb-12 bg-white rounded-lg shadow-md">
+  <h2 class="text-3xl font-bold mb-4">References</h2>
+  <div class="space-y-6">
+    <!-- Reference Card -->
+    <div class="p-6 bg-gray-50 rounded-md shadow-sm">
+      <h3 class="text-xl font-semibold">Peter Walker</h3>
+      <p class="text-gray-600">Walker Engineering Consultants Ltd.</p>
+      <p>
+        <a href="mailto:peterwalker381@gmail.com" class="text-blue-600 hover:underline">peterwalker381@gmail.com</a>
+      </p>
+      <p>
+        <a href="tel:+64225344973" class="text-blue-600 hover:underline">+64 22 534 4973</a>
+      </p>
+    </div>
+    <!-- Reference Card -->
+    <div class="p-6 bg-gray-50 rounded-md shadow-sm">
+      <h3 class="text-xl font-semibold">Byron Pearce</h3>
+      <p class="text-gray-600">First Mate, M/Y Apostrophe</p>
+      <p>
+        <a href="mailto:pearce.byron88@gmail.com" class="text-blue-600 hover:underline">pearce.byron88@gmail.com</a>
+      </p>
+      <p>
+        <a href="tel:+27829061703" class="text-blue-600 hover:underline">+27 82 906 1703</a>
+      </p>
+    </div>
+    <!-- Reference Card -->
+    <div class="p-6 bg-gray-50 rounded-md shadow-sm">
+      <h3 class="text-xl font-semibold">Joel Sanda</h3>
+      <p class="text-gray-600">Captain, M/Y Rahil</p>
+      <p>
+        <a href="mailto:rahil98.captain@gmail.com" class="text-blue-600 hover:underline">rahil98.captain@gmail.com</a>
+      </p>
+      <p>
+        <a href="tel:+33682911497" class="text-blue-600 hover:underline">+33 68 291 1497</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section mb-12 bg-white rounded-lg shadow-md">
       <h2 class="text-3xl font-bold mb-4">Contact</h2>
-      <form class="max-w-md mx-auto space-y-4">
+      <form class="max-w-lg mx-auto space-y-4">
         <div>
           <label for="name" class="block font-bold">Name:</label>
-          <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-md px-4 py-2" required>
+          <input type="text" id="name" name="name" class="w-full border px-4 py-2 rounded-md" placeholder="Your Name" required>
         </div>
         <div>
           <label for="email" class="block font-bold">Email:</label>
-          <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-md px-4 py-2" required>
+          <input type="email" id="email" name="email" class="w-full border px-4 py-2 rounded-md" placeholder="Your Email" required>
         </div>
         <div>
           <label for="message" class="block font-bold">Message:</label>
-          <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded-md px-4 py-2" required></textarea>
+          <textarea id="message" name="message" rows="5" class="w-full border px-4 py-2 rounded-md" placeholder="Your Message" required></textarea>
         </div>
-        <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-colors duration-300">Submit</button>
+        <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700">Send Message</button>
       </form>
     </section>
-  </main>
 
-  <footer class="bg-gray-800 text-white py-4 mt-8">
-    <div class="container mx-auto text-center">
-      &copy; 2024 Stephen Walker. All rights reserved.
-    </div>
-  </footer>
 
-  <script>
-    // Add smooth scrolling for navigation
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-</body>
-</html>
+<footer class="bg-gray-800 text-white py-4 mt-8">
+  <div class="container mx-auto text-center">
+    &copy; 2024 Stephen Walker. All rights reserved. <br>
+    <span class="text-gray-400">Last updated: 18 November 2024</span>
+  </div>
+</footer>
+    
