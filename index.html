@@ -29,13 +29,13 @@
     <!-- Name -->
     <div class="text-xl font-bold">Stephen Walker</div>
     <!-- Links -->
-    <div class="flex space-x-6">
+    <div class="flex space-x-3">
       <!-- Portfolio Link -->
-      <a href="portfolio.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+      <a href="portfolio.pdf" target="_blank" class="bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-700">
         Portfolio
       </a>
       <!-- LinkedIn Link -->
-      <a href="https://www.linkedin.com/in/stephenwalkereng/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+      <a href="https://www.linkedin.com/in/stephenwalkereng/" target="_blank" class="bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-700">
         LinkedIn
       </a>
     </div>
@@ -43,13 +43,12 @@
 </header>
 
 
-
   <main class="container mx-auto pt-24 px-4 lg:px-8">
 <!-- About Section -->
 <section id="about" class="section mb-12 bg-white rounded-lg shadow-md">
   <h2 class="text-3xl font-bold mb-4">About Me</h2>
   <p class="content">
-    Hi there! I'm Stephen Walker, a final-year Mechatronics Engineering student at Stellenbosch University, driven by a passion for seamlessly integrating mechanical engineering, electronics, and computer science to create cutting-edge automation and robotics systems that embody innovation and precision.
+    I'm Stephen Walker, a final-year Mechatronics Engineering student at Stellenbosch University, driven by a passion for seamlessly integrating mechanical engineering, electronics, and computer science to create cutting-edge automation and robotics systems that embody innovation and precision.
   </p>
   <p class="content mt-4">
     <strong>Email:</strong> 
@@ -64,13 +63,21 @@
   </p>
 </section>
 
-
-
     <!-- Education Section -->
     <section id="experience" class="section mb-12 bg-white rounded-lg shadow-md">
       <h2 class="text-3xl font-bold mb-4">Experience</h2>
       <h3 class="subsection-title">Professional Experience</h3>
       <div class="space-y-6">
+        <div>
+          <h4 class="font-bold">Engineering Intern</h4>
+          <p class="text-gray-600">Energy Partners, Belville, Cape Town | Sep 2024 – Dec 2024</p>
+          <ul class="list-disc pl-6 mt-2">
+            <li>Developed interactive Power BI dashboards for real-time visualization and performance analysis of plant operations.</li>
+            <li>Conducted a cost-benefit analysis for migrating asset management processes to Google Cloud Platform (GCP).</li>
+            <li>Utilized SQL queries in BigQuery to clean, preprocess, and analyse large datasets for actionable insights.</li>
+            <li>Developed Python scripts and workflows to integrate BigQuery data with Cloud Functions for real-time data analysis.</li>
+          </ul>
+        </div>
         <div>
           <h4 class="font-bold">Engineering Intern</h4>
           <p class="text-gray-600">Walker Engineering Consultants Ltd., Auckland, NZ | Dec 2022 – Feb 2023</p>
@@ -92,7 +99,7 @@
           <h4 class="font-bold">Deckhand/Water Sports Instructor</h4>
           <p class="text-gray-600">Motor Yacht Apostrophe | Jan 2018 – Jun 2018</p>
           <ul class="list-disc pl-6 mt-2">
-            <li>Assisted the chief engineer with servicing and maintenance tasks.</li>
+            <li>Assisted the chief engineer with servicing and maintenance tasks including C-18 Caterpillar, 380hp turbo diesel motors.</li>
             <li>Provided water sports instruction, including waterskiing and kiteboarding.</li>
           </ul>
         </div>
@@ -159,20 +166,31 @@
         </div>
         <div class="bg-gray-100 p-4 rounded-md shadow-sm">
           <h4 class="font-bold text-lg mb-2">Maritime</h4>
-          <p>STCW 2010, RYA Powerboat Level 2, VHF Radio</p>
+          <p>STCW 2010, RYA Powerboat Level 2, VHF Radio, Proficiency in Designated Security Duties</p>
         </div>
       </div>
     </section>
-
 
 <!-- References Section -->
 <section id="references" class="section mb-12 bg-white rounded-lg shadow-md">
   <h2 class="text-3xl font-bold mb-4">References</h2>
   <div class="space-y-6">
+
+<!-- Reference Card -->
+<div class="p-6 bg-gray-50 rounded-md shadow-sm">
+  <h3 class="text-xl font-semibold">Coenrad Ehlers</h3>
+  <p class="text-gray-600">General Manager in Asset Management, Energy Partners </p>
+  <p>
+    <a href="mailto:coenrade@energypartners.co.za" class="text-blue-600 hover:underline">coenrade@energypartners.co.za</a>
+  </p>
+  <p>
+    <a href="tel:+27824583015" class="text-blue-600 hover:underline">+27 82 458 3015</a>
+  </p>
+</div>
     <!-- Reference Card -->
     <div class="p-6 bg-gray-50 rounded-md shadow-sm">
       <h3 class="text-xl font-semibold">Peter Walker</h3>
-      <p class="text-gray-600">Walker Engineering Consultants Ltd.</p>
+      <p class="text-gray-600">Director, Walker Engineering Consultants Ltd.</p>
       <p>
         <a href="mailto:peterwalker381@gmail.com" class="text-blue-600 hover:underline">peterwalker381@gmail.com</a>
       </p>
@@ -205,31 +223,9 @@
   </div>
 </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section mb-12 bg-white rounded-lg shadow-md">
-      <h2 class="text-3xl font-bold mb-4">Contact</h2>
-      <form class="max-w-lg mx-auto space-y-4">
-        <div>
-          <label for="name" class="block font-bold">Name:</label>
-          <input type="text" id="name" name="name" class="w-full border px-4 py-2 rounded-md" placeholder="Your Name" required>
-        </div>
-        <div>
-          <label for="email" class="block font-bold">Email:</label>
-          <input type="email" id="email" name="email" class="w-full border px-4 py-2 rounded-md" placeholder="Your Email" required>
-        </div>
-        <div>
-          <label for="message" class="block font-bold">Message:</label>
-          <textarea id="message" name="message" rows="5" class="w-full border px-4 py-2 rounded-md" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700">Send Message</button>
-      </form>
-    </section>
-
-
 <footer class="bg-gray-800 text-white py-4 mt-8">
   <div class="container mx-auto text-center">
     &copy; 2024 Stephen Walker. All rights reserved. <br>
-    <span class="text-gray-400">Last updated: 18 November 2024</span>
+    <span class="text-gray-400">Last updated: 05 December 2024</span>
   </div>
 </footer>
-    
